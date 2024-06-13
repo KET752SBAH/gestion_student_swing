@@ -14,6 +14,7 @@ public class home extends javax.swing.JFrame {
      * Creates new form home
      */
     public home() {
+        super("Gestions des Etudiants");
         initComponents();
     }
 
@@ -48,6 +49,7 @@ public class home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 102, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Home"));
 
+        jButton1.setBackground(java.awt.SystemColor.activeCaption);
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-inscription-d'étudiant-100.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,6 +57,7 @@ public class home extends javax.swing.JFrame {
             }
         });
 
+        btnOperationStudent.setBackground(java.awt.SystemColor.activeCaption);
         btnOperationStudent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-configuration-du-projet-100.png"))); // NOI18N
         btnOperationStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,6 +65,7 @@ public class home extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setBackground(java.awt.SystemColor.activeCaption);
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-élève-100.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +91,7 @@ public class home extends javax.swing.JFrame {
         jLabel4.setText("ETUDIANTS");
 
         jLabel5.setFont(new java.awt.Font("Andalus", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("GESTION DES ETUDIANTS");
 

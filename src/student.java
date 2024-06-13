@@ -74,8 +74,8 @@ public class student extends javax.swing.JFrame {
             }
         });
 
-        btnRetour.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-annuler-48.png"))); // NOI18N
-        btnRetour.setText("Annuler");
+        btnRetour.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-backspace-24.png"))); // NOI18N
+        btnRetour.setText("Retour");
         btnRetour.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRetourActionPerformed(evt);
@@ -305,7 +305,11 @@ public class student extends javax.swing.JFrame {
             stmt.executeUpdate(sql);
 
             JOptionPane.showMessageDialog(null, "Etudiant Modifier avec Succès ");
-
+            
+            setVisible(false);
+            home object = new home();
+            object.setVisible(true);
+            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
